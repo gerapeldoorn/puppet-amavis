@@ -65,7 +65,7 @@ $enable_dkim_signing = 1;    # load DKIM signing code, keys defined by dkim_key
 
 @mynetworks = qw( 127.0.0.0/8 [::1] [FE80::]/10 [FEC0::]/10
 <% @mynetworks.each do |network| -%>
-                  <%= @network %>
+                  <%= network %>
 <% end -%>
                  );
 
